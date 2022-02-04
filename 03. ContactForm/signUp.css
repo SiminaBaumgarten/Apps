@@ -1,0 +1,138 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	display: flex;
+	color: white;
+	justify-content: center;
+}
+.sign-up-main-container{
+	background-image: url("./images/bg-intro-desktop.png");
+	background-color: hsl(257, 27%, 26%);
+	padding: 50px;
+	display: flex;
+}
+.learn-new-skills-container{
+	display: flex;
+	flex-direction: column;
+	line-height: 1.5;
+	width: 500px;
+	justify-content: center;
+	margin-right: 40px;
+	
+}
+.title-container {
+	font-size: 40px;
+	font-weight: bold;
+	display: flex;
+	justify-content:center;
+}
+.info-container {
+	font-size: 18px;
+	padding-top: 20px;
+	display: flex;
+	justify-content: center;
+}
+.form-container {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+.try-it-free {
+	background-color: hsl(180, 66%, 49%);
+	border-radius: 10px;
+	padding: 20px 50px;
+	font-size: 18px;
+	box-shadow: 1px 5px hsl(266deg 8% 14%);
+}
+.try-it-free span {
+	font-weight: bold;
+}
+.contact-form {
+	
+	background-color: white;
+	margin: 20px 0px;
+	padding: 15px;
+	box-shadow: 2px 10px hsl(266deg 8% 14%);
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	
+}
+form {
+	display: flex;
+	flex-direction: column;
+	margin-top:  20px;
+	gap: 10px;
+	text-align: center;
+}
+input[type=text], input[type=password], input[type=submit] {
+	width: 100%;
+	height: 50px;
+	font-size: 18px;
+	padding: 0px 15px;
+	border-radius: 5px;
+	border: 1px solid hsl(0, 0%, 75%);
+	color: hsl(0, 0%, 75%);
+}
+input[type=submit] {
+	background-color: hsl(180, 66%, 49%);
+	padding: 15px 0px;
+	font-weight: bold;
+	margin-bottom: 15px;
+	color: white;
+	margin-bottom: 0px;	
+}
+input[type=submit]:hover{
+	opacity: 30%;
+}
+
+#terms-and-services {
+	color: black;
+	font-size: 12px;
+	margin-bottom: 15px;
+	margin-top: 0px;
+}
+#terms-and-services a, .signIn a{
+	text-decoration: none;
+	color: hsl(0, 87%, 67%);
+	cursor: pointer;
+}
+.signIn{
+	font-size: 18px;
+}
+.error-message{
+	color: hsl(0, 87%, 67%);
+	font-size: 12px;
+	visibility: hidden;
+	display: flex;
+}
+i {
+	margin-right: 5px;
+	
+}
+
+@media only screen and (max-width: 375px){
+	.sign-up-main-container{
+		background-image: url("./images/bg-intro-mobile.png");
+		padding: 50px 15px 70px;
+		flex-direction: column;
+	}
+	.learn-new-skills-container{
+		width: 350px;
+		margin: 50px 0px;
+		align-self: center;
+	
+}
+.title-container {
+	font-size: 28px;
+	text-align: center;
+}
+.info-container {
+	font-size: 14px;
+	
+	text-align: center;
+}
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Final Project</title>
+		<link rel="stylesheet" href="./reset.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+		<link rel="stylesheet" href="./signUp.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+		<div class="sign-up-main-container">
+			<div class="learn-new-skills-container">
+				<div class="title-container">
+					<p>Learn new skills from the comfort of your home</p>
+				</div>
+				<div class="info-container">
+					<p>Learning never stops, but why invest more time than needed. Learn all the skills you need from the comfort of your own home without any worries.</p>
+				</div>
+			</div>
+			<div class="form-container">
+				<div class="try-it-free">
+					<p><span>Try it free for 7 days </span>then choose any of plans thereafter</p>
+				</div>
+				<div class="contact-form">
+					<form id="form">
+						<!--<label for="fname">First name:</label>-->
+						<input type="text" id="fname" name="fname" placeholder="First name">
+						<p class="error-message"><i class="fas fa-exclamation-circle"></i>This field is mandatory</p>
+						<!--<label for="lname">Last name:</label>-->
+						<input type="text" id="lname" name="lname" placeholder="Last name">
+						<p class="error-message"><i class="fas fa-exclamation-circle"></i>This field is mandatory</p>
+						<!--<label for="uname">Username:</label>-->
+						<input type="text" id="uname" name="uname" placeholder="Username">
+						<p class="error-message"><i class="fas fa-exclamation-circle"></i>This field is mandatory</p>
+						<input type="password" id="password" placeholder="Password">
+						<p class="error-message"><i class="fas fa-exclamation-circle"></i>This field is mandatory</p>
+						<!--<button class="btn" type="submit">Submit</button>-->
+						<input type="submit" placeholder="Submit">
+						<p id="terms-and-services">By clicking the button you are agreeing to our <a href="index.html">Terms and services</a></p>
+					</form>
+				</div>
+				<div class="signIn">
+					<p>Already have an account?</p>
+					<a href="logIn.html" target="_blank">Sign in here!</a>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="./signUp.js"></script>
+	</body>
