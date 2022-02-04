@@ -1,0 +1,169 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	
+}
+img[alt="decorations-top"]{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	z-index: -1;
+}
+img[alt="decorations-bottom"]{
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	z-index: -1;
+}
+.countdown-section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+.countdown-and-prices{
+	background-color: hsl(0, 0%, 75%, 0.3);
+	width: 1400px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	position: relative;
+}
+
+h2 {
+	font-size: 40px;
+	font-weight: bold;
+	color: hsl(260, 8%, 14%);
+	max-width: 25ch;
+	align-self: center;
+}
+.countdown {
+	padding: 50px;
+	width: 500px;
+	display:flex;
+	justify-content: space-around;
+	font-size: 18px;
+	color: hsl(260, 8%, 14%);
+	text-align: center;
+}
+.day, .hour, .minute, .second {
+	
+}
+.prices-section {
+	padding-bottom: 50px;
+	padding-top: 50px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+}
+.button-container {
+	width: 300px;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	align-self: center;
+}
+button {
+	width: 100px;
+	height: 30px;
+	border-radius: 5px;
+	font-size: 18px;
+	cursor: pointer;
+}
+.button-container button {
+	background-color: white;
+	color: hsl(257, 27%, 26%);
+	border: 1px solid hsl(257, 27%, 26%);
+}
+
+.button-container button[value="active"] {
+	background-color:  hsl(257, 27%, 26%);
+	color: white;
+}
+.button-container button:hover {
+	border: 1px solid hsl(0, 0%, 100%);
+}
+.card-container{
+	padding-top: 50px;
+	padding-bottom: 50px;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	align-items: baseline;
+}
+.card{
+	width: 250px;
+	padding: 15px;
+	border-radius: 10px;
+	color: hsl(257, 27%, 26%);
+	font-size: 15px;
+	background-color: white;
+}
+.price{
+	font-size: 40px;
+	font-weight: bold;
+	margin: 20px;
+}
+.professional-card {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	background-color: hsl(257, 27%, 26%);
+	color: white;
+	
+}
+
+.hr{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border: 1px solid hsl(257, 27%, 26%);
+}
+.professional-card hr {
+	border: 1px solid white;
+}
+
+.get-started-button {
+	padding: 15px 25px;
+	background-color: hsl(180, 66%, 49%);
+	font-size: 15px;
+	margin: 15px 0px;
+	color: white;
+	width: 150px;
+	height: 50px;
+	border-radius: 50px;
+	cursor: pointer;
+	border-color: transparent;
+}
+.get-started-button:hover{
+	border: 1px solid hsl(180, 66%, 49%);
+	background-color: white;
+	color: hsl(180, 66%, 49%);
+}
+
+@media only screen and (max-width: 575px) {
+	.countdown {
+		width: 300px;
+		gap: 10px;
+		align-self: center;
+	}
+	.button-container {
+		width: 250px;
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+	.card-container{
+		flex-direction: column;
+		gap: 20px;
+	}
+}
+

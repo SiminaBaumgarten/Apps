@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Final Project</title>
+		<link rel="stylesheet" href="./style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+		<div class="countdown-and-prices">
+		<img src="./images/bg-top.svg" alt="decorations-top"/>
+		<img src="./images/bg-bottom.svg" alt="decorations-bottom"/>
+			<section class="countdown-section">
+				<div><h2>Take advantage of our special offer for another</h2></div>
+				
+				<div class="countdown">
+					<div class="container-day">
+						<h3 class="day">Time</h3>
+						<h3>Day</h3>
+					</div>
+					<div class="container-hour">
+						<h3 class="hour">Time</h3>
+						<h3>Hour</h3>
+					</div>
+					<div class="container-minute">
+						<h3 class="minute">Time</h3>
+						<h3>Minute</h3>
+					</div>
+					<div class="container-second">
+						<h3 class="second">Time</h3>
+						<h3>Second</h3>
+					</div>
+				</div>	
+			</section>
+			<section class="prices-section">
+				<h2> Our Prices</h2>
+				<div class = "button-container">
+					<button onclick="getPricePerYear()" id="annuallyButton" type="button">Annually</button>
+					<button onclick="getPricePerMonth()" id="monthlyButton" type="button" value="active">Monthly</button>
+				</div>
+				
+				<div class = "card-container">
+					<div class="basic card">
+						<p>Basic</p>
+						<p id="basicCardPrice" class="price">$19.99</p>
+						<hr class="hr">
+						<p>10 courses/month</p>
+						<hr class="hr">
+						<p>2 Users Allowed</p>
+						<hr class="hr">
+						<p>No dowload</p>
+						<hr class="hr">
+						<button onclick="signIn.html" type="button" class="get-started-button">Get Started</button>
+					</div>
+					<div class="professional-card card">
+						<p>Professional</p>
+						<p id="professionalCardPrice"class="price">$24.99</p>
+						<hr class="hr">
+						<p>20 courses/month</p>
+						<hr class="hr">
+						<p>5 Users Allowed</p>
+						<hr class="hr">
+						<p>No dowload</p>
+						<hr class="hr">
+						<button onclick="signIn.html" type="button" class="get-started-button">Get Started</button>
+						
+					</div>
+					<div class="master card">
+						<p>Master</p>
+						<p id="masterCardPrice" class="price">$39.99</p>
+						<hr class="hr">
+						<p>Unlimited courses/month</p>
+						<hr class="hr">
+						<p>10 Users Allowed</p>
+						<hr class="hr">
+						<p>Download allowed</p>
+						<hr class="hr">
+						<button onclick="signIn.html" type="button" class="get-started-button">Get Started</button>
+					</div>
+				</div>
+			</section>
+		</div>
+		<script type="text/javascript" src="./script.js"></script>
+	</body>
+</html>
